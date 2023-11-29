@@ -2,7 +2,7 @@ from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://tkjjzsdmyjpbmh:3227ca576c0d9900588c49e06c749a6ed6dd9b74d38ca8b9c1a712ec846f0707@ec2-3-210-173-88.compute-1.amazonaws.com:5432/d8j3o78461he2i'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
